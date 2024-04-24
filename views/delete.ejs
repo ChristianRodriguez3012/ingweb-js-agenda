@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Eventos</h1>
+    <a href="/events/new">Crear nuevo evento</a>
+    <% eventos.forEach(function(evento) { %>
+        <h2><%= evento.titulo %></h2>
+        <p><%= evento.descripcion %></p>
+        <a href="/events/edit/<%= evento.id %>">Editar</a>
+        <form action="/events/delete/<%= evento.id %>" method="POST" style="display: inline;">
+            <input type="submit" value="Eliminar">
+        </form>
+    <% }); %>
+</body>
+</html>

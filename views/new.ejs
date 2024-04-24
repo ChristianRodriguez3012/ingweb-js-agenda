@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Nuevo Evento</h1>
+    <form action="/events" method="post">
+        <label for="titulo">Título:</label><br>
+        <input type="text" id="titulo" name="titulo"><br>
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion"></textarea><br>
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <input type="submit" value="Crear Evento">
+    </form>
+</body>
+</html>
